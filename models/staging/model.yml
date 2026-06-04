@@ -1,0 +1,7 @@
+version: 2
+sources:
+    - name: snowflake_model
+      database: "{{('DI_SALES_DEV')}}"
+      schema: STAGING_SCHEMA_CURATED_SCHEMA
+      tables:
+        - name: dim_orders
