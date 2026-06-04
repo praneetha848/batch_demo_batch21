@@ -1,0 +1,9 @@
+{%macro generated_schema_name(custom_schema,node)%}
+    {%if custom_schema%}
+         {{custom_schema | trim }}
+    {% else %}
+         {{target.schema}}
+         
+    {% endif %}
+
+{% endmacro%}
