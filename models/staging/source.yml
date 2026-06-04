@@ -41,3 +41,10 @@ sources:
              tests:
                - not_null
       
+
+
+    - name: snapshot_tables
+      database: "{{('DI_SALES_DEV')}}"
+      schema: SNAPSHOT_TABLES
+      tables:
+        - name: snap_ordersdetails
